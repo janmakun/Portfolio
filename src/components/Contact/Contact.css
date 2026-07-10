@@ -1,0 +1,123 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 26px;
+  padding-bottom: 70px;
+}
+
+.contact-info {
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  height: fit-content;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  color: var(--accent);
+}
+
+.contact-info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.contact-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.96rem;
+  color: var(--text);
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.social-btn:hover {
+  color: var(--accent-hover);
+  border-color: var(--border-strong);
+  background: rgba(59, 169, 252, 0.08);
+  transform: translateX(4px);
+}
+
+.contact-form-wrap {
+  border-radius: var(--radius-lg);
+  padding: 34px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row textarea {
+  background: rgba(8, 27, 46, 0.5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(59, 169, 252, 0.15);
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

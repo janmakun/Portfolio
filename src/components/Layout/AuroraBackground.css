@@ -1,0 +1,56 @@
+.aurora-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(183, 197, 211, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(183, 197, 211, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+}
+
+.blob-a {
+  width: 480px;
+  height: 480px;
+  top: -140px;
+  left: -100px;
+  background: radial-gradient(circle, #3ba9fc, transparent 70%);
+}
+
+.blob-b {
+  width: 420px;
+  height: 420px;
+  top: 20%;
+  right: -160px;
+  background: radial-gradient(circle, #2f6fb8, transparent 70%);
+  opacity: 0.28;
+}
+
+.blob-c {
+  width: 380px;
+  height: 380px;
+  bottom: -120px;
+  left: 30%;
+  background: radial-gradient(circle, #63c7ff, transparent 70%);
+  opacity: 0.2;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 70% at 50% 0%, transparent 40%, var(--bg) 100%);
+}

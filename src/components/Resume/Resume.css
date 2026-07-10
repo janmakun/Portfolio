@@ -1,0 +1,161 @@
+.resume-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.resume-summary {
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  margin-bottom: 44px;
+}
+
+.resume-summary p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 26px;
+  padding-bottom: 60px;
+}
+
+.resume-col {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.resume-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.resume-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.resume-card-head h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  padding-left: 4px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 18px;
+  bottom: -26px;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-dot {
+  min-width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 5px;
+  box-shadow: 0 0 0 4px rgba(59, 169, 252, 0.15);
+}
+
+.timeline-item h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.timeline-item p {
+  color: var(--accent-hover);
+  font-size: 0.87rem;
+  margin-bottom: 4px;
+}
+
+.timeline-period {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  background: rgba(59, 169, 252, 0.08);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.timeline-points {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+.timeline-points li {
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+  line-height: 1.7;
+  list-style: disc;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(59, 169, 252, 0.08);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.award-item h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.award-item p {
+  color: var(--accent-hover);
+  font-size: 0.87rem;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
