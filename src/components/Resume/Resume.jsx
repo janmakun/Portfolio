@@ -16,7 +16,7 @@ const Resume = () => {
           <h1 className="section-title" style={{ marginBottom: 8 }}>My Resume</h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <a href="/resume.pdf" download className="btn btn-primary">
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="btn btn-primary">
             <HiOutlineDownload size={18} /> Download Resume
           </a>
         </Reveal>
