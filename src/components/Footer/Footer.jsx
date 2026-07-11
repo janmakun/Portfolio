@@ -10,7 +10,7 @@ const Footer = () => {
           <span className="brand-mark">JieM</span>
           <div>
             <p className="footer-name">John Mark Manlapaz</p>
-            <p className="footer-tag">Software Engineer &middot; Full Stack </p>
+            <p className="footer-tag">Student</p>
           </div>
         </div>
 

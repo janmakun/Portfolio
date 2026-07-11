@@ -16,7 +16,7 @@ const About = () => {
       <div className="about-grid">
         <Reveal delay={0.1} className="about-text">
           <p>
-            Hello! I'm <strong>John Mark Manlapaz</strong>, a Bachelor of Science in
+            Hello! I'm <strong>John Mark Manlapaz</strong>, a student, studying Bachelor of Science in
             Information Technology student from Pampanga State University.
           </p>
           <p>

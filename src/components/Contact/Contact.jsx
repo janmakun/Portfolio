@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiFacebook, FiMail, FiMapPin, FiSend } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiFacebook, FiMail, FiMapPin, FiSend, FiInstagram } from 'react-icons/fi';
 import Reveal from '../Layout/Reveal';
 import './Contact.css';
 
 const socials = [
-  { icon: FiGithub, label: 'GitHub', href: 'https://github.com/' },
-  { icon: FiLinkedin, label: 'LinkedIn', href: 'https://linkedin.com/' },
-  { icon: FiFacebook, label: 'Facebook', href: 'https://facebook.com/' },
+  { icon: FiGithub, label: 'GitHub', href: 'https://github.com/janmakun' },
+  // { icon: FiLinkedin, label: 'LinkedIn', href: 'https://linkedin.com/' },
+  { icon: FiFacebook, label: 'Facebook', href: 'https://www.facebook.com/jo.0hnnyyy' },
+  { icon: FiInstagram, label: 'Facebook', href: 'https://www.instagram.com/jo_0hnnyy/' },
   { icon: FiMail, label: 'Email', href: 'mailto:johnmanlapaz64@gmail.com' },
 ];
 

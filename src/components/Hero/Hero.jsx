@@ -48,9 +48,9 @@ const Hero = () => {
           </motion.h1>
 
           <motion.div className="hero-roles" variants={fadeUp} initial="hidden" animate="show" custom={2}>
-            <span>Software Engineer</span>
+            <span>Student</span>
             <span className="dot">•</span>
-            <span>Full Stack Developer</span>
+            <span>Want to be a Full Stack Developer</span>
           </motion.div>
 
           <motion.div className="hero-typing" variants={fadeUp} initial="hidden" animate="show" custom={3}>
