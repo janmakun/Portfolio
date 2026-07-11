@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var segments = location.pathname.split('/').filter(Boolean);
+      var repo = '/Portfolio';
+      var path = location.pathname.slice(repo.length) || '/';
+      sessionStorage.redirect = path + location.search + location.hash;
+      location.replace(repo + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
