@@ -65,7 +65,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div className="hero-actions" variants={fadeUp} initial="hidden" animate="show" custom={5}>
-            <a href="/resume.pdf" download className="btn btn-primary">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} download className="btn btn-primary">
               <HiOutlineDownload size={18} /> Download Resume
             </a>
             <Link to="/projects" className="btn btn-outline">
